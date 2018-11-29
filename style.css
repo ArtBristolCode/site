@@ -1,0 +1,27 @@
+
+
+p
+{
+      font-family: Monospace;
+      /*background: #eee;*/
+      color: #000;
+			position: absolute;
+			top: 10px;
+      left: 20px;
+			width: 80%;
+		  z-index: 100;
+			display:block;
+      font-size: 20px;
+      background-color: #BFFFA07A;
+			}
+
+a{
+  text-decoration: none;
+  color: black;
+  outline: 0;
+  background-color: #42f471;
+}
+
+a:hover {
+    background-color: #9af9b4;
+}
