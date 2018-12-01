@@ -1,45 +1,40 @@
-//some kind of experiment based on 1960s artist frida nakey
+//based on code fot drawgramming https://www.beccarose.co.uk/code/drawgramming/ (this is a simplified version)
 
-function setup() {
-createCanvas(windowWidth, windowHeight);
+var img = [];
+var imgW;
+var imgH;
 
- noLoop();
-  fridaNakay();
+function preload() {
+  // load images
+  for (var i = 0; i < 35; i++) {
+    img[i] = loadImage("imgs/" + i + ".png");
+    print(i);
+  }
 }
 
-function fridaNakay() {
-
-  //7 random values:
-  //size, location(X+Y), orientation, quantity, pen style
+function setup() {
+  createCanvas(windowWidth, windowHeight);
   background(255);
-  var numthings = random(6, 20);
+  noLoop();
+  imageMode(CENTER);
+  noStroke();
+  imageSnap();
+}
 
-  for (var j = 0; j < numthings; j++) {
+/////////////////////////////
+//function to make imaages //
+/////////////////////////////
 
-    var length = random(40, 60);
-    var Y = random(100, height);
-    var X = random(0, width);
-    var thick = random(2, 10);
-    var grey = random(0, 255);
-    var alph = random(0, 255);
-    var weight = random(1, 3);
-    var weight2 = random(1, 3);
-    var numStripesX = random(6, 300);
-    var numStripesY = random(6, 300);
+function imageSnap() {
+  background(255);
+  //image randoms
+  var rand1 = ~~random(35);
+  var rand2 = ~~random(35);
+  var rand3 = ~~random(35);
 
-
-    for (var i = 0; i < numStripesX; i++) {
-      strokeWeight(weight);
-      stroke(grey, alph);
-      line(X, Y, X, Y + length);
-      X += thick;
-    }
-    for (var k = 0; k < numStripesY; k++) {
-      strokeWeight(weight2);
-      stroke(grey, alph);
-      line(X, Y, X + length, Y);
-      Y += thick;
-    }
-  }
+  //display images
+  image(img[rand3], (width / 2) - 200, (height / 2), imgW, imgH);
+  image(img[rand2], width / 2, (height / 2) - 10, imgW, imgH);
+  image(img[rand1], (width / 2) + 200, (height / 2) + 30, imgW, imgH);
 
 }
