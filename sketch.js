@@ -34,10 +34,10 @@ function imageSnap() {
 
   //display images
   tint(255, ~~random(100, 200)); // Apply transparency without changing color
-  image(img[rand3], (width / 2) - 200, (height / 2), imgW, imgH);
+  image(img[rand3], (width / 2) - 300, (height / 2), imgW, imgH);
   tint(255, ~~random(100, 200)); // Apply transparency without changing color
   image(img[rand2], width / 2, (height / 2) - 10, imgW, imgH);
   tint(255, ~~random(100, 200)); // Apply transparency without changing color
-  image(img[rand1], (width / 2) + 200, (height / 2) + 30, imgW, imgH);
+  image(img[rand1], (width / 2) + 300, (height / 2) + 30, imgW, imgH);
 
 }
