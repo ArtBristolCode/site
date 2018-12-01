@@ -7,7 +7,7 @@ var imgH;
 function preload() {
   // load images
   for (var i = 0; i < 35; i++) {
-    img[i] = loadImage("img/" + i + ".png");
+    img[i] = loadImage("imgs/" + i + ".png");
     print(i);
   }
 }
