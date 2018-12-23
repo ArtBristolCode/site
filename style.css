@@ -3,25 +3,76 @@
 p
 {
       font-family: Monospace;
-      /*background: #eee;*/
       color: #000;
-			position: absolute;
-			top: 10px;
-      left: 20px;
-			width: 80%;
 		  z-index: 100;
 			display:block;
-      font-size: 40px;
-      background-color: rgb(92, 255, 100, 0.58);
+      font-size: 20px;
+      text-align: left;
+      margin-left: 10px;
 			}
 
 a{
-  text-decoration: none;
   color: black;
   outline: 0;
-  background-color: #42f471;
+  text-decoration-style: dotted;
 }
 
 a:hover {
-    background-color: #9af9b4;
+    background-color: #39bfe6;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  font-family: Monospace;
+  cursor: pointer;
+  background-color: #39bfe6;
+  padding: 5px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #39bfe6;
+}
+
+/*----text stuff----*/
+h1{
+font-size: 14pt;
+margin: 3%;
+font-weight:normal;
+display: inline;
+float:left;
+line-height: 25px;
+font-family: Monospace;
+margin-left: 10px;
+}
+
+/*----sidebar----*/
+
+.sidebar {
+width: 200px; /* Set the width of the sidebar */
+position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+z-index: 1; /* Stay on top */
+top: 0; /* Stay at the top */
+left: 0px;
+overflow-x: hidden; /* Disable horizontal scroll */
+padding-top: 20px;
+background-color: #ffffff;
+}
+
+.main {
+	position: absolute;
+  z-index: 100;
+  margin-left: 210px; /* Same as the width of the sidenav */
+}
+
+/*----SCREENS----*/
+
+@media screen and (max-height: 450px) {
 }
