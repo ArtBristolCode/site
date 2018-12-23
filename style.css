@@ -18,7 +18,7 @@ a{
 }
 
 a:hover {
-    background-color: #39bfe6;
+    background-color: #bfe639;
 }
 
 /* Style the button that is used to open and close the collapsible content */
@@ -70,6 +70,10 @@ background-color: #ffffff;
 	position: absolute;
   z-index: 100;
   margin-left: 210px; /* Same as the width of the sidenav */
+}
+
+#about{
+  background-color: #39bfe6;
 }
 
 /*----SCREENS----*/
