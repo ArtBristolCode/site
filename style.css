@@ -1,17 +1,40 @@
 
+body {
+  background-color: #ffffff;
+}
 
-p
-{
-      font-family: Monospace;
-      color: #000;
-		  z-index: 100;
-			display:block;
-      font-size: 20px;
-      text-align: left;
-      margin-left: 10px;
-			}
+.col-sm-3, .col-sm-9 {
+  /*border: 1px solid green;*/
+}
 
-a{
+.sidebar div {
+  border-top: 2px dashed;
+  border-bottom: 2px dashed;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sidebar .logo  {
+  border: 0px;
+  border-bottom: 2px dashed;
+}
+
+.sidebar .logo img {
+  height: 200px;
+  width: auto;
+}
+
+p {
+  font-family: Monospace;
+  color: #000;
+  z-index: 100;
+	display:block;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+a {
   color: black;
   outline: 0;
   text-decoration-style: dotted;
@@ -23,10 +46,12 @@ a:hover {
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
+  width: 300px;
   font-family: Monospace;
   cursor: pointer;
   background-color: #39bfe6;
   padding: 5px;
+  padding-left: 10px;
   border: none;
   text-align: left;
   outline: none;
@@ -42,41 +67,66 @@ a:hover {
 }
 
 /*----text stuff----*/
-h1{
-font-size: 14pt;
-margin: 3%;
-font-weight:normal;
-display: inline;
-float:left;
-line-height: 25px;
-font-family: Monospace;
-margin-left: 10px;
-}
-
-/*----sidebar----*/
-
 .sidebar {
-width: 200px; /* Set the width of the sidebar */
-position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-z-index: 1; /* Stay on top */
-top: 0; /* Stay at the top */
-left: 0px;
-overflow-x: hidden; /* Disable horizontal scroll */
-padding-top: 20px;
-background-color: #ffffff;
+  background-color: #ffffff;
+  font-size: 14pt;
+  /*margin: 3%;*/
+  font-weight:normal;
+  /*float:left;*/
+  /*line-height: 25px;*/
+  font-family: Monospace;
 }
 
-.main {
-	position: absolute;
-  z-index: 100;
-  margin-left: 210px; /* Same as the width of the sidenav */
-}
 
 #about{
   background-color: #39bfe6;
 }
 
-/*----SCREENS----*/
+/*sketch*/
+#defaultCanvas0 {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 20%;
 
-@media screen and (max-height: 450px) {
 }
+/*----SCREENS----*/
+@media screen and (max-width: 450px) {
+  .sidebar div {
+    float: left;
+    border-style: none;
+  }
+  .sidebar .title {
+    padding-top: 15px;
+    float: right;
+  }
+
+  .sidebar .logo  {
+    border: 0px;
+  }
+
+  .sidebar .date{
+    width:100%;
+    border-top: 2px dashed;
+    border-bottom: 2px dashed;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    border: 0px;
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  .collapsible {
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+

@@ -2,8 +2,22 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PCD Bristol</title>
+
+    <!--fb open graph meta-->
+    <meta property="og:url"         content="https://artbristolcode.github.io/site/" />
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="Code Create Celebrate: Processing Community Day Bristol" />
+    <meta property="og:description" content="Processing Community Day (PCD) is a celabration of art, code, and diversity around the world. PCD Bristol is an oppertunity for people to get together and learn more about making art with code, and making code with art. Join us for an afternoon of workshops and talks (venue TBC) and an evening of music and visuals at the Cube Cinema." />
+    <meta property="og:image"     content="https://artbristolcode.github.io/site/pcd_logo.png" />
+    <!--fb open graph meta-->
+
     <meta name="description" content="Processing Community Day (and night) in Bristol UK, 9th Feb 2018">
+   
+   <!-- bootstrap Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
 
     <script src="libraries/p5.js" type="text/javascript"></script>
     <script src="libraries/p5.dom.js" type="text/javascript"></script>
@@ -15,86 +29,113 @@
 
   </head>
   <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 sidebar">
+           <div class="logo">
+            <img src="pcd_logo.png" alt="the PCD logo - a black inky circle with letters P C D in white">
+           </div>
 
-      <div class="sidebar">
-       <img src="pcd_logo.png" alt="the PCD logo - a black inky circle with letters P C D in white" height="200">
-       <h1>~ ~ ~ ~ ~ ~ ~ ~
-       <br>Processing
-       <br>Community
-       <br>Day
-       <br>Bristol
-       <br>~ ~ ~ ~ ~ ~ ~ ~
-       <br>9 February 2019
-       <br>~ ~ ~ ~ ~ ~ ~ ~
-       <br><em>DAY</em>
-       <br>TBC
-       <br>12:30-16:00
-       <br>~ ~ ~ ~ ~ ~ ~ ~
-       <br><em>NIGHT</em>
-       <br>Cube Cinema
-       <br>19:30-late
-       <br>~ ~ ~ ~ ~ ~ ~ ~ </h1>
-     </div>
+           <div class="title">
+           Processing
+           <br>Community
+           <br>Day
+           <br>Bristol
+           <br>
+           </div>
+           <div class="date">
+           9 February 2019
+           <br>
+           </div>
+           <div>
+           <em>DAY</em>
+           <br>TBC
+           <br>12:30-16:00
+           <br>
+           </div>
+           <div>
+           <em>NIGHT</em>
+           <br>Cube Cinema
+           <br>19:30-late
+           <br>
+         </div>
+        </div>
 
-      <div class="main">
-        <div id="about">
-        <p><a href ="https://day.processing.org/pcd-ww.html" target="_blank">Processing Community Day</a> (PCD) is a celabration
-        of art, code, and diversity around the world. PCD Bristol is an oppertunity for people to get together and learn more
-        about making art with code, and making code with art. Join us for an afternoon of workshops and talks (venue TBC)
-        and an evening of music and visuals at the Cube Cinema.
-        <br>
-        <br>If you would like to help organise, volunteer, or join our mailing list email us
-        <a href="https://goo.gl/forms/ili9MGhYYZHa3E0Q2" target="_blank">this form</a>.
-        </p>
-     </div>
-
-        <button class="collapsible"><b>~ D A Y ~</b></button>
-           <div class="content">
-           <p>Art, code...celebrate
-          <br>TBC
-          <br>9 Feb, 12:30-4pm
-          <br>Free
+        <div class="col-sm-9">
+          <div id="about">
+          <p><a href ="https://day.processing.org/pcd-ww.html" target="_blank">Processing Community Day</a> (PCD) is a celabration
+          of art, code, and diversity around the world. PCD Bristol is an oppertunity for people to get together and learn more
+          about making art with code, and making code with art. Join us for an afternoon of workshops and talks (venue TBC)
+          and an evening of music and visuals at the Cube Cinema.
           <br>
-          <br> Come along to a free afternoon of family friendly hands on making activities, find out how code can be used to make art and what
-          potato printing has got to do with coding!
+          <br>If you would like to help organise, volunteer, or join our mailing list email us
+          <a href="https://goo.gl/forms/ili9MGhYYZHa3E0Q2" target="_blank">this form</a>.
           </p>
+          </div><!-- about -->
+
+          <button class="collapsible"><b>~ D A Y ~</b></button>
+          <div class="content">
+             <p>Art, code...celebrate
+            <br>TBC
+            <br>9 Feb, 12:30-4pm
+            <br>Free
+            <br>
+            <br> Come along to a free afternoon of family friendly hands on making activities, find out how code can be used to make art and what
+            potato printing has got to do with coding!
+            </p>
+          </div>
+          <br>
+          <button class="collapsible"><b>~ N I G H T ~</b></button>
+          <div class="content">
+             <p><b>Reprogram the Cube!</b>
+             <br>Cube Cinema, Dove Street South, Kingsdown, Bristol, BS2 8JD
+             <br>9 Feb, 7:30-late
+             <br>£5/£3
+             <br>Book tickets:
+             <br>
+             <br>For one night only live-coding acts (Coral Manton, Joanna Armitage) take over the cinema and bar for an evening
+             of audio-visual mayhem, including live glitching and mashing up of YOUR digital content.
+             </p>
+             <img src="nightimg.png">
+          </div>
+          <br>
+          <button class="collapsible"><b>~ OPEN CALL ~</b></button>
+          <div class="content">
+             <p>Feature your work at Reprogram the Cube!
+             <br>
+             <br>Open call for people to be part of the PCD evening...a night of audio-visual mayhem, including
+             glitching and mashing up of YOUR digital sketches. To take part, make a sketch using the visual programming tools
+             from Processing (p5.js / Processing / processing.py) and we’ll project it at the event. Simple gifs or full blown
+             psychedelic computer generated wizardry, it all counts.
+             <br>
+             <br><a href="https://tinyurl.com/PCDopen-call" target="_blank">
+              Full details and how to submit here</a>
+             </p>
+          </div>
+          <br>
+          <button class="collapsible"><b>~ GET INVOLVED ~</b></button>
+          <div class="content">
+            <p>have a question or want to get involved? <a href="mailto:artbristolcode@gmail.com">email us</a>
+              <br>or fill in <a href="https://goo.gl/forms/ili9MGhYYZHa3E0Q2" target="_blank">this form</a>.
+            </p>
+          </div>
+
         </div>
-        <br>
-        <button class="collapsible"><b>~ N I G H T ~</b></button>
-        <div class="content">
-           <p><b>Reprogram the Cube!</b>
-           <br>Cube Cinema, Dove Street South, Kingsdown, Bristol, BS2 8JD
-           <br>9 Feb, 7:30-late
-           <br>£5/£3
-           <br>Book tickets:
-           <br>
-           <br>For one night only live-coding acts (Coral Manton, Joanna Armitage) take over the cinema and bar for an evening
-           of audio-visual mayhem, including live glitching and mashing up of YOUR digital content.
-           </p>
-           <img src="nightimg.png">
-        </div>
-        <br>
-        <button class="collapsible"><b>~ OPEN CALL ~</b></button>
-        <div class="content">
-           <p>Feature your work at Reprogram the Cube!
-           <br>
-           <br>Open call for people to be part of the PCD evening...a night of audio-visual mayhem, including
-           glitching and mashing up of YOUR digital sketches. To take part, make a sketch using the visual programming tools
-           from Processing (p5.js / Processing / processing.py) and we’ll project it at the event. Simple gifs or full blown
-           psychedelic computer generated wizardry, it all counts.
-           <br>
-           <br><a href="https://tinyurl.com/PCDopen-call" target="_blank">
-            Full details and how to submit here</a>
-           </p>
-        </div>
-        <br>
-        <button class="collapsible"><b>~ GET INVOLVED ~</b></button>
-        <div class="content">
-          <p>have a question or want to get involved? <a href="mailto:artbristolcode@gmail.com">email us</a>
-            <br>or fill in <a href="https://goo.gl/forms/ili9MGhYYZHa3E0Q2" target="_blank">this form</a>.
-          </p>
-        </div>
-      </div>
+      </div><!-- row -->
+
+      
+    </div><!-- /container-fluid -->
+
+
+     <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
 
         <script>
         var coll = document.getElementsByClassName("collapsible");
@@ -112,5 +153,5 @@
           });
         }
         </script>
-
+  </body>
 </html>
