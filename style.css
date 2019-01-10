@@ -101,6 +101,10 @@ a:hover {
     float: right;
   }
 
+  .sidebar .day, .sidebar .night {
+    width: 50%;
+  }
+
   .sidebar .logo  {
     border: 0px;
   }
@@ -112,6 +116,8 @@ a:hover {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
+
 
   .logo img {
     border: 0px;
