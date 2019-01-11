@@ -40,13 +40,16 @@ p {
 }
 
 a {
-  color: black;
   outline: 0;
-  text-decoration-style: dotted;
+  text-decoration: none;
+  background-color: #bfe639;
+  color: black;
 }
 
 a:hover {
+    color: black;
     background-color: #bfe639;
+    text-decoration: none;
 }
 
 /* Style the button that is used to open and close the collapsible content */
@@ -138,4 +141,3 @@ a:hover {
     text-decoration: underline;
   }
 }
-
