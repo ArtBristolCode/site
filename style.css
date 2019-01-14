@@ -42,13 +42,13 @@ p {
 a {
   outline: 0;
   text-decoration: none;
-  background-color: #bfe639;
+  background-color: #40c59b;
   color: black;
 }
 
 a:hover {
     color: black;
-    background-color: #bfe639;
+    background-color: #3d82d8;
     text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ a:hover {
   width: 300px;
   font-family: Monospace;
   cursor: pointer;
-  background-color: #39bfe6;
+  background-color: #8e56e9;
   padding: 5px;
   padding-left: 10px;
   border: none;
@@ -71,7 +71,7 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #39bfe6;
+  background-color: #aa7bf5;
 }
 
 /*----text stuff----*/
@@ -87,7 +87,7 @@ a:hover {
 
 
 #about{
-  background-color: #39bfe6;
+  background-color: #e39fc0;
 }
 
 /*sketch*/
@@ -137,7 +137,4 @@ a:hover {
     text-align: center;
   }
 
-  a {
-    text-decoration: underline;
-  }
 }
