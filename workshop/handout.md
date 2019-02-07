@@ -1,12 +1,17 @@
 # **Creative Coding with P5.js:**
 
+This hand out can be found at:
+https://tinyurl.com/PCD-handout
+
 ## **What is P5.js?**
-A JavaScript language that is designed to make coding accessible. It was designed by artists and technologists and can be used to make lots of different kinds of programs including sound,
+P5.js is a JavaScript language that is designed to make coding accessible. It was designed by artists and technologists and can be used to make lots of different kinds of programs including sound, visuals etc.
 
 P5.JS was designed so that it can be easily added to a website - which means you can share what you have made!
 
+find out more https://p5js.org/
+
 ## **Getting started**
-Using the browser version
+Using the web editor https://editor.p5js.org/
 
 - Background greyscale
 - Background colours
@@ -22,7 +27,8 @@ Using the browser version
 - random
 - difference between setup and draw
 
-**Go Further!**  
+## **Go Further!**  
 - check out other sketches - try changing some of the variables
+-
 
 <img src="./imgs/connect_24_0-18.gif"/>
