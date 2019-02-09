@@ -20,7 +20,7 @@ Using the web editor https://editor.p5js.org/
 
 **Now for the potatoes.....**
 - Use the potatoes and ink to design a **** THEME **** (i.e., a holiday card)
-- Try to "recreate" this in code using P5.js
+- Now "recreate" this in code using P5.js
 
 **Make it move**
 - Play around with mouseX and mouseY
@@ -29,6 +29,6 @@ Using the web editor https://editor.p5js.org/
 
 ## **Go Further!**  
 - check out other sketches - try changing some of the variables
--
+- share sketches
 
 <img src="./imgs/connect_24_0-18.gif"/>
