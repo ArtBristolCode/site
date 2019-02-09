@@ -3,12 +3,12 @@
 This hand out can be found at:
 https://tinyurl.com/PCD-handout
 
-wifi network: Framework
-wifi password: Fr4m3w0rk
+- wifi network: Framework
+- wifi password: Fr4m3w0rk
 
-unlock computers
-user: Maker
-password: kwmc2010
+- unlock computers
+- user: Maker
+- password: kwmc2010
 
 ## **Getting started**
 Using the web editor https://editor.p5js.org/
@@ -20,7 +20,7 @@ Using the web editor https://editor.p5js.org/
 - reference https://p5js.org/reference/
 
 **Now for the potatoes.....**
-- Use the potatoes and ink to create program a plant...code a forest...generate some trees! 
+- Use the potatoes and ink to create program a plant...code a forest...generate some trees!
 - Now "recreate" this in code using P5.js
 
 **Make it move**
