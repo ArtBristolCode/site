@@ -15,11 +15,11 @@ Using the web editor https://editor.p5js.org/
 
 - Background greyscale
 - Background colours
-- Make a circle
-- Change the colour of circle
+- Make a circle / rectangle
+- Change the colour and size of circle
 
 **Now for the potatoes.....**
-- Use the potatoes and ink to design a **** THEME **** (i.e., a holiday card)
+- Use the potatoes and ink to design a new King Street building
 - Now "recreate" this in code using P5.js
 
 **Make it move**
@@ -29,6 +29,4 @@ Using the web editor https://editor.p5js.org/
 
 ## **Go Further!**  
 - check out other sketches - try changing some of the variables
-- share sketches
-
-<img src="./imgs/connect_24_0-18.gif"/>
+- how to share sketches
